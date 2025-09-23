@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amplicity - Kathryn's Portfolio</title>
+    <meta name="description" content="A website created to train QA engineers, intentionally coded with accessibility errors. The experience uses gamification, encouraging learners to spot issues and check them off as they progress.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">Kathryn</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#work" class="nav-link">← Back to Portfolio</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container project-detail">
+        <!-- Project Header -->
+        <header class="project-detail-header">
+            <div class="project-breadcrumb">
+                <a href="index.html">Portfolio</a> / <span>Amplicity</span>
+            </div>
+            <h1 class="project-detail-title">Amplicity</h1>
+            <h2 class="project-detail-subtitle">QA Training Platform</h2>
+            
+            <div class="project-detail-meta">
+                <div class="project-detail-info">
+                    <span class="project-detail-year">2021 - 2022</span>
+                    <div class="project-detail-tags">
+                        <span class="tag">Brand</span>
+                        <span class="tag">Web</span>
+                        <span class="tag">Design System</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Project Overview -->
+        <section class="project-overview">
+            <div class="project-overview-content">
+                <h3>Project Overview</h3>
+                <p class="project-lead">A website created to train QA engineers, intentionally coded with accessibility errors. The experience uses gamification, encouraging learners to spot issues and check them off as they progress.</p>
+                
+                <div class="project-details-grid">
+                    <div class="project-detail-item">
+                        <h4>Role</h4>
+                        <p>Full-Stack Developer & UX Designer</p>
+                    </div>
+                    <div class="project-detail-item">
+                        <h4>Duration</h4>
+                        <p>8 months</p>
+                    </div>
+                    <div class="project-detail-item">
+                        <h4>Team</h4>
+                        <p>QA Training Team</p>
+                    </div>
+                    <div class="project-detail-item">
+                        <h4>Tools</h4>
+                        <p>React, Node.js, WCAG Guidelines</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Images -->
+        <section class="project-detail-images">
+            <div class="project-image-large">
+                <img src="green.png" alt="Amplicity QA Training Platform Interface" />
+            </div>
+            <div class="project-images-grid">
+                <img src="green.png" alt="Error detection interface" />
+                <img src="green.png" alt="Progress tracking dashboard" />
+                <img src="green.png" alt="Gamification elements" />
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <section class="project-content">
+            <div class="project-section">
+                <h3>The Challenge</h3>
+                <p>QA engineers needed hands-on experience identifying accessibility issues, but traditional training materials were theoretical and didn't provide realistic scenarios. We needed a way to simulate real-world accessibility problems in a controlled learning environment.</p>
+            </div>
+
+            <div class="project-section">
+                <h3>The Solution</h3>
+                <p>We built a fully functional website intentionally embedded with common accessibility violations. QA engineers could explore the site, use assistive technologies, and identify issues in a gamified environment that tracked their progress and provided immediate feedback.</p>
+            </div>
+
+            <div class="project-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Intentionally flawed website with 50+ accessibility violations</li>
+                    <li>Progressive difficulty levels from basic to advanced issues</li>
+                    <li>Real-time scoring and achievement system</li>
+                    <li>Integrated screen reader and keyboard navigation testing</li>
+                    <li>Detailed explanations for each accessibility violation</li>
+                    <li>Team leaderboards and collaborative challenges</li>
+                </ul>
+            </div>
+
+            <div class="project-section">
+                <h3>Technical Implementation</h3>
+                <p>The platform was built with React and Node.js, featuring a sophisticated tracking system that monitored user interactions and provided analytics on learning patterns. We carefully crafted accessibility violations that represented real-world scenarios while ensuring the learning experience remained accessible.</p>
+            </div>
+
+            <div class="project-section">
+                <h3>Impact</h3>
+                <p>The platform trained over 200 QA engineers across multiple organizations. Post-training assessments showed a 95% improvement in accessibility issue detection rates, and the gamified approach achieved a 92% completion rate compared to 35% for traditional training methods.</p>
+            </div>
+        </section>
+
+        <!-- Navigation to other projects -->
+        <section class="project-navigation">
+            <div class="project-nav-links">
+                <a href="empathy-mapping.html" class="project-nav-link prev">
+                    <span class="nav-label">Previous Project</span>
+                    <span class="nav-title">Empathy Mapping</span>
+                </a>
+                <a href="expensive.html" class="project-nav-link next">
+                    <span class="nav-label">Next Project</span>
+                    <span class="nav-title">Expen$ive</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
