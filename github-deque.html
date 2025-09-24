@@ -77,12 +77,12 @@
         <!-- Project Images -->
         <section class="project-detail-images">
             <div class="project-image-large">
-                <img src="git.png" alt="GitHub x Deque Escape Room Interface" />
+                <img src="git.png" class="lightbox-trigger" alt="GitHub x Deque Escape Room Interface" />
             </div>
             <div class="project-images-grid">
-                <img src="git.png" alt="Escape room challenge screen" />
-                <img src="git.png" alt="Accessibility testing interface" />
-                <img src="git.png" alt="Progress tracking dashboard" />
+                <img src="git1.png" class="lightbox-trigger" alt="Escape room challenge screen" />
+                <img src="git2.png" class="lightbox-trigger" alt="Accessibility testing interface" />
+                <img src="git3.png" class="lightbox-trigger" alt="Progress tracking dashboard" />
             </div>
         </section>
 
@@ -125,6 +125,14 @@
             </div>
         </section>
     </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

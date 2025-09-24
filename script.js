@@ -185,6 +185,52 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.outline = 'none';
         });
     });
+    
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+    
+    // Add click event to all lightbox trigger images
+    lightboxTriggers.forEach(img => {
+        img.addEventListener('click', function() {
+            openLightbox(this.src, this.alt);
+        });
+    });
+    
+    function openLightbox(src, alt) {
+        lightboxImage.src = src;
+        lightboxImage.alt = alt;
+        lightbox.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        
+        // Focus management for accessibility
+        lightboxClose.focus();
+    }
+    
+    function closeLightbox() {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
+        lightboxImage.src = '';
+    }
+    
+    // Close lightbox when clicking the X button
+    lightboxClose.addEventListener('click', closeLightbox);
+    
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+    
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.style.display === 'block') {
+            closeLightbox();
+        }
+    });
 });
 
 // Utility functions
