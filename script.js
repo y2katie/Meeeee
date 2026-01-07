@@ -145,19 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 10);
     });
     
-    // Theme detection and handling
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    
-    function handleThemeChange(e) {
-        if (e.matches) {
-            document.body.classList.add('dark-theme');
-        } else {
-            document.body.classList.remove('dark-theme');
-        }
-    }
-    
-    prefersDarkScheme.addEventListener('change', handleThemeChange);
-    handleThemeChange(prefersDarkScheme);
     
     // Loading animation
     window.addEventListener('load', function() {
